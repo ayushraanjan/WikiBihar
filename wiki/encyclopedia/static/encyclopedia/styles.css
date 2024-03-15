@@ -36,3 +36,12 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+#main_heading_for_error_page{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    text-align: center;
+
+
+}

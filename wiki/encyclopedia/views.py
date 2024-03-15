@@ -11,5 +11,12 @@ def index(request):
 
 
 def retrieve_page(request,name):
-    return HttpResponse("util.get_entry(name)")
+    list_of_entries = util.list_entries()
+    if name not in list_of_entries:
+        return render(request, "encyclopedia/no_entry.html", {
+            "name" : name
+        })
+    else:
+        return HttpResponse(util.get_entry(name))
+
 
