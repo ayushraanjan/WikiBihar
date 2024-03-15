@@ -13,10 +13,31 @@ def index(request):
 def retrieve_page(request,name):
     list_of_entries = util.list_entries()
     if name not in list_of_entries:
-        return render(request, "encyclopedia/no_entry.html", {
+        return render(request, "encyclopedia/not_found.html", {
             "name" : name
         })
     else:
         return HttpResponse(util.get_entry(name))
+    
+
+
+def search(request):
+    if request.method == "POST":
+        search_term = request.POST.get('search_term', '')
+        list_of_entries = util.list_entries()
+
+        if search_term in list_of_entries:
+             return HttpResponse(util.get_entry(search_term))
+        else:
+            return render(request, "encyclopedia/not_found.html", {
+                "name": search_term
+            })
+    if request.method == "GET":
+        return HttpResponse("this works")
+
+    
+    
+
+
 
 

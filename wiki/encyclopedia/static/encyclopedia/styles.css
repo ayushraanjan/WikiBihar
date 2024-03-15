@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: white;
+    text-align: center;
 }
 
 code {
@@ -44,4 +45,11 @@ textarea {
     text-align: center;
 
 
+}
+#img-wiki{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    
+    align-self: center;
+    
 }
