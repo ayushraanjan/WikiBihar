@@ -1,0 +1,71 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+ WikiBihar
+
+{% endblock %}
+
+
+
+
+{% block body %}
+<style>
+    #main_form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* This ensures padding and border are included in the element's total width and height */
+}
+#text{
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+}
+#button{
+  background-color: #686767cb;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+</style>
+<h1> Creating New Page</h1>
+
+
+
+    <form id="main_form" action="{% url 'new_entry' %}" method="POST">
+        {% csrf_token %}
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+        
+        <label for="body">Body:</label>
+        <input type="text" id="text" name="body">
+        
+        <input type="submit" id="button" value="Submit">
+      </form>
+
+
+
+{% endblock %}

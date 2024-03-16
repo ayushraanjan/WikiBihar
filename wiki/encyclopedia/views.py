@@ -34,6 +34,16 @@ def search(request):
             })
     if request.method == "GET":
         return HttpResponse("this works")
+    
+
+def new(request):
+    if request.method == "POST":
+        title = request.POST.get('title',' ')
+        body = request.POST.get('body',' ')
+        util.save_entry(title,body)
+        
+    return render(request, "encyclopedia/new.html",)
+
 
     
     
