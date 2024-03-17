@@ -6,14 +6,9 @@
 
 {% block body %}
 
-
-    
-<div id="img-wiki">
-    
     <img   src="https://github.com/ayushraanjan/WikiBihar/blob/master/WikiBihar.jpg?raw=true" height="350px" width="1000px" alt="sameimage">
-</div>
 
-    <ul>
+    <ul style="text-align:left">
         {% for entry in entries %}
             <li> <a href="wiki/{{ entry }}" > {{ entry }}</a> </li>
         {% endfor %}

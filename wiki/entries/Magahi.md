@@ -1,0 +1,1 @@
+Magahi , also known as Magadhi , is a Indo-Aryan language spoken in Bihar, Jharkhand and West Bengal states of eastern India,[7][8] and in the Terai of Nepal.[9] Magadhi Prakrit was the ancestor of Magahi, from which the latter's name derives.

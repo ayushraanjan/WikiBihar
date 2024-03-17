@@ -1,0 +1,1 @@
+The Tekari Raj (sometimes spelled Tikari Raj) was a zamindari estate of the Bhumihar community in South Bihar. They controlled 2,046 villages on their estate, which covered a 7,500 square kilometres (2,900 sq mi) area, near to the town of Gaya.[2][3]  Rajas of Tekari like Raja Mitrajit Singh were renowned for their scholarship and for their works of poetry and history.

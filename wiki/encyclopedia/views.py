@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 from . import util
 
+list_of_entries = util.list_entries()
 
 def index(request):
     return render(request, "encyclopedia/index.html", {
@@ -19,7 +20,15 @@ def retrieve_page(request,name):
     else:
         return HttpResponse(util.get_entry(name))
     
+def search1(request):
+    if request.method == "POST":
+        search_term = request.POST.get('search_term', ' ')
+        results = [item for item in list_of_entries if search_term.lower() in item.lower()]
 
+        return render(request, "encyclopedia/search.html"{
+            'query': search_term,
+            'results': results
+        })
 
 def search(request):
     if request.method == "POST":

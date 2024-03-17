@@ -1,0 +1,1 @@
+Valmiki National Park is a tiger reserve in the West Champaran District of Bihar, India.[1] It is the only national park in Bihar.[2] Valmiki Tiger Reserve covers 898.45 km2 (346.89 sq mi), which is 17.4% of the total geographical area of the district. As of 2022, there were 54 tigers in the Reserve.

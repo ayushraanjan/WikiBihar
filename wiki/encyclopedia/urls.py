@@ -9,5 +9,6 @@ urlpatterns = [
     path("new", views.new, name="new_entry"),
     
     
+    
 
 ]

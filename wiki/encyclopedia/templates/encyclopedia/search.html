@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% if query %}
+<div> 
+    <div>
+        {% for post in posts %}
+        <p>{{post.title}}</p>
+        {% endfor %}
+    </div>
+</div>
+{% else %}
+
+<p>Please Search the Page you are looking for</p>
