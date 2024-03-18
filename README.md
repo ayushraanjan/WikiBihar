@@ -6,6 +6,7 @@ WikiBihar is a Django-powered project aimed at creating a comprehensive digital 
 -   Search functionality to find specific articles.
 -   User-friendly interface for easy navigation.
 -   Contribution system for users to add and edit content.
+-   Editing by anyone
 
   
 ![enter image description here](https://github.com/ayushraanjan/tonguecare.github.io/blob/main/Screenshot%202024-03-16%20165256.png?raw=true)
