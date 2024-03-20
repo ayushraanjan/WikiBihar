@@ -23,6 +23,9 @@ To get started with WikiBihar locally, follow these steps:
 
 The Project files are under the Encyclopedia directory.
 
+### Currently Working on 
+- Search Functionality
+
 ## Contributing
 
 Contributions are welcome! Here are some ways you can contribute to WikiBihar:
