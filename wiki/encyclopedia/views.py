@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import entry
 
 from . import util
 
@@ -20,7 +21,6 @@ def retrieve_page(request,name):
     else:
         return HttpResponse(util.get_entry(name))
     
-
 def search(request):
     if request.method == "POST":
         search_term = request.POST.get('search_term', '')
